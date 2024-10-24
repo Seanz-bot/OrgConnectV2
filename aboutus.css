@@ -1,0 +1,191 @@
+/* Body and Background */
+body {
+    background-image: url(images/maincon.png) ;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 200px;
+}
+
+.nav-list button {
+    background:none;
+    border: solid 2px #a135ff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-list button:hover {
+    background-image: linear-gradient(90deg, #832eff ,#fe4ff2);
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #282654;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #8f6bf4;
+}
+
+/* Icons for each button */
+.sidebar .home {
+
+    background-size: cover;
+}
+
+.sidebar .user {
+
+    background-size: cover;
+}
+
+.sidebar .heart {
+
+    background-size: cover;
+}
+
+.sidebar .bell {
+
+    background-size: cover;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Image Container */
+.imagecontainer {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 50px;
+}
+
+.circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ff58f0, #6d45f5);
+    position: absolute;
+    border: 10px solid #f6c7ff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Info Container */
+.infocontainer {
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin-left: 50px;
+}
+
+.infocontainer h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.infocontainer p {
+    margin-bottom: 15px;
+}
+
+.description {
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Contact Button */
+.contact-btn {
+    background-color: transparent;
+    border: 1px solid #8f6bf4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #8f6bf4;
+    color: #fff;
+}
+
+/* follow org checkbox*/
+.heart-toggle {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.heart-toggle input {
+    display: none; /* Hide the checkbox input */
+}
+
+/* Default state of heart icon (empty heart) */
+.heart-toggle .heart {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #ff58f0; /* Set color for the empty heart */
+    transition: background-color 0.3s, color 0.3s, content 0.3s;
+  
+}
+
+/* Heart icon when checked (filled heart) */
+.heart-toggle input:checked + .heart {
+    color: #ff0000; /* Red filled heart color */
+    content: '&hearts;'; /* Unicode for filled heart */
+}
