@@ -3,40 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDLO Organization</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="aboutus.css">
+    <link href="https://db.onlinewebfonts.com/c/83e4a6b639612cd501853be5a7cf97ab?family=Trend+Sans+One+Regular" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    
     <nav>
         <ul class="nav-list">
-            <li><button>About Us</button></li>
-            <li><button>Officers</button></li>
-            <li><button>Committee</button></li>
-            <li><button>Handled Events</button></li>
-            <li><button>Announcements</button></li>
+            <li><button>ABOUT US</button></li>
+            <li><button>OFFICERS</button></li>
+            <li><button>COMMITTEE</button></li>
+            <li><button>HANDLED EVENTS</button></li>
+            <li><button>ANNOUNCEMENTS</button></li>
         </ul>
     </nav>
 
     <div class="sidebar">
-        <a href="#home" class="icon home"></a>
-        <a href="#about" class="icon user"></a>
-        <a href="#follow" class="icon heart"></a>
-        <a href="#contact" class="icon bell"></a>
+        <button class="icon-btn home-icon">
+            <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+        </button>
+        <button class="icon-btn user-icon">
+            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+        </button>
+        <button class="icon-btn heart-icon">
+            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+        </button>
+        <button class="icon-btn bell-icon">
+            <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
+        </button>
     </div>
 
     <section class="main-content">
         <div class="imagecontainer">
-            <div class="circle"></div>
+            <div class="circle">
+                <img src="images/logo1.png" alt="">
+            </div>
         </div>
 
         <div class="infocontainer">
             <label class="heart-toggle">
                 <input type="checkbox" id="heart-checkbox">
-                <span class="icon heart">&#9825;</span><p> FOLLOW ORG</p>
+                <span class="icon heart">&#9825;</span><p class="follow">  FOLLOW ORG</p>
             </label>
-            <h1>Student Development and Leadership Organization (SDLO)</h1>
-            <p class="description">THE STUDENT DEVELOPMENT AND LEADERSHIP ORGANIZATION (SDLO) IS A DYNAMIC GROUP COMMITTED TO FOSTERING LEADERSHIP SKILLS, PERSONAL GROWTH, AND COMMUNITY INVOLVEMENT AMONG STUDENTS. SDLO SERVES AS A PLATFORM FOR STUDENTS TO ENGAGE IN MEANINGFUL ACTIVITIES, DEVELOP CRITICAL THINKING, AND PROMOTE SOCIAL RESPONSIBILITY WITHIN THE SCHOOL AND THE LOCAL COMMUNITY.</p>
-            <button class="contact-btn">Contact Us</button>
+            <h1>Future Business Leaders Society</h1>
+            <h2>(FBLS)</h2>
+            <h1 class="line">━━━━━━━━━━━━━━━━━━</h1>
+            <p class="description">Dedicated to promoting sustainability on campus, SCI organizes events and projects focused on reducing the university’s carbon footprint and encouraging eco-friendly habits among students.</p>
+            <button class="contact-btn">CONTACT US</button>
         </div>
     </section>
 </body>

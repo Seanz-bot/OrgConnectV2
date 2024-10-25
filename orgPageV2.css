@@ -200,7 +200,7 @@ color: #f6c7ff;
     left: 0;
     z-index: 2;
     margin: auto;
-    border: 5px solid rgba(255, 154, 158, 0.8); /* to create the ring effect */
+    border: 5px solid #f6c7ff; /* to create the ring effect */
     margin: 0 auto;
     transition: box-shadow 0.3s ease;
 }
