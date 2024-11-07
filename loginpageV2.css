@@ -6,26 +6,30 @@
   }
   
   body {
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-image: url(images/backgroundV2.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    padding-top: 60px; /* Add padding to prevent container from overlapping logo */
+    padding-top: 80px; /* Adjust this value based on your navbar height */
+    margin: 0;
+    padding: 0;
   }
   
   .container {
     background-color: #fff;
     border-radius: 50px;
-    box-shadow: 5px 5px 15px #644bd0;
+    box-shadow: none;
     position: relative;
     overflow: hidden;
     width: 1360px;
     max-width: 100%;
     min-height: 580px;
-   
+    
   }
   
   .container h1{
@@ -33,10 +37,12 @@
   }
 
   .container p {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
+    text-align: justify;
+    font-family: 'DM Sans', sans-serif;
   }
   
   .container .pHolder{
@@ -55,18 +61,18 @@
     margin: 15px 0 10px;
   }
   .container button {
-    background-image: linear-gradient(90deg, #9963da, #10194b);
+    background-image: linear-gradient(90deg, #832eff, #fe4ff4);
     color: #fff;
     padding: 10px 45px;
     border: 1px solid transparent;
     border-radius: 20px;
     font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 7px;
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
     font-family: 'Proxima Nova Condensed', sans-serif;
-    font-family: 'Proxima Nova Extra Condensed', sans-serif;
+    
     font-size: 15px;
     width: 60%;  /* Changed from 100% to 60% to make it less wide */
   }
@@ -88,7 +94,7 @@
   
   .container form h1 {
     margin-bottom: 20px;  /* Add some space below the heading */
-    color: #644bd0;
+    color: #3b1b74;
   }
 
   .container input {
@@ -97,7 +103,7 @@
     margin: 8px 0;
     padding: 10px 15px;
     font-size: 13px;
-    border-radius: 8px;
+    border-radius: 12px;
     width: 80%;  /* Use percentage instead */
     min-width: 350px;  /* Ensures minimum width */
     outline: none;
@@ -105,6 +111,39 @@
     border-width: 2px;
     border-style: solid;
   }
+
+
+  .input-container-logIn {
+    position: relative;
+    width: 80%;
+    margin: 8px 0;
+}
+
+  .input-container-signUp {
+    position: relative;
+    width: 80%;
+    margin: 7px 50px;
+  }
+
+  .input-icon-signUp {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9963da;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+.input-icon-logIn {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9963da;
+  font-size: 1.2em;
+  z-index: 1;
+}
   
   .sign-up, .sign-in {
     position: absolute;
@@ -263,16 +302,48 @@
     margin-top: -20px;  /* Move the "SIGN IN" text upwards */
   }
 
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 2000;
+  }
 
-.logo {
-    position: absolute;
-    top: 100px;  /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2000; /* Ensure logo stays above other elements */
-}
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+  }
 
-.logo img {
-    width: 450px; /* Adjust based on your logo image size */
-    height: auto;
-}
+  .nav-logo img {
+    height: 150px;
+    width: 150px;
+    margin-right: 4rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    
+  }
+
+  .nav-links .icon-btn {
+    background-color: #682fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .nav-links .icon-btn:hover {
+    background-color: #682fff;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px #a149d4;
+  }
