@@ -24,15 +24,12 @@ body {
     align-items: center;
     padding: 1rem 2rem;
     z-index: 2000;
-    
-    
   }
 
   .nav-logo {
     display: flex;
     align-items: center;
     margin-left: 5rem;
-    animation: fadeIn 1s forwards;
   }
 
   .nav-logo img {
@@ -70,7 +67,7 @@ body {
 
   .forgot-password-container {
     background: white;
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 0rem;
     border-radius: 25px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -79,7 +76,6 @@ body {
     position: relative;
     margin-top: 40px;
     justify-content: center;
-    
 }
 
 .icon-circle {
@@ -116,7 +112,7 @@ body {
     width: 220px;  /* Adjusted size to fit within the smallest circle */
     height: 220px;
     position: relative;
-    margin-top: 30px;
+    margin-top: 15px;
     opacity: 0.8;
     
 }
@@ -133,33 +129,23 @@ h1 {
 p {
     color: #737373;
     font-family: 'DM Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     line-height: 1.6;
     padding: 0 1rem;
     letter-spacing: 1px;
 }
 
-.send-code-btn {
-    background: linear-gradient(to right, #832eff, #fe4ff2);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 20px;
-    font-family: 'Proxima Nova Condensed', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-}
+.gradient-line {
+    width: 80%;
+    max-width: 300px;
+    height: 20px;
+    background: linear-gradient(90deg, #832eff, #fe4ff2);
+    margin: 0 auto;
+    border-radius: 50px;
+    position: relative;
+    top: 12px;
 
-.send-code-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(138, 43, 226, 0.3);
 }
 
 @keyframes fadeIn {
@@ -181,5 +167,6 @@ p {
         transform: translateY(0);
     }
 }
+
 
 
